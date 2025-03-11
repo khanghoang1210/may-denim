@@ -5,13 +5,13 @@ import React from 'react'
 
 const AccountBtn = () => {
   return (
-    <Link href={"/cart"} className='bg-gray-10 p-3 rounded-lg mr-3'>
+    <Link href={"/account"} className='bg-gray-10 p-3 rounded-lg mr-3'>
         <Image
         priority
         src="/icons/account.svg"
         height={100}
         width={100}
-        alt="cart"
+        alt="account"
         className="max-w-[16px] max-h-[16px]"
       />
     </Link>
