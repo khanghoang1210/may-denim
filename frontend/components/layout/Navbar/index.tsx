@@ -63,7 +63,7 @@ const data = [
   ];
 const Navbar = () => {
   return (
-    <nav className='top-0 z-20 sticky'>
+    <nav className='bg-white top-0 z-20 sticky'>
         <div className='flex relative max-w-7xl mx-auto justify-between items-center  py-5  px-4 '>
             <p>May Denim</p>
 
