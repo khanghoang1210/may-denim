@@ -1,6 +1,8 @@
 package com.khanghoang.maydenim.order.service;
 
 import com.khanghoang.maydenim.order.dto.CreateOrderReq;
+import com.khanghoang.maydenim.order.enums.OrderStatus;
+import com.khanghoang.maydenim.order.enums.PaymentStatus;
 import com.khanghoang.maydenim.order.model.Order;
 import com.khanghoang.maydenim.order.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +21,9 @@ public class OrderService {
         order.setPrice(req.price());
         order.setSkuCode(req.skuCode());
         order.setQuantity(req.quantity());
+        order.setStatus(OrderStatus.PENDING);
+        order.setPaymentStatus(PaymentStatus.UNPAID);
+        order.setShippingAddress(req.shippingAddress());
 
         orderRepository.save(order);
     }
